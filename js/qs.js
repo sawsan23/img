@@ -1,22 +1,3 @@
-Skip to content
-sawsan23
-/
-ss
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-ss/js/js/qs.js
-@sawsan23
-sawsan23 Add files via upload
- 1 contributor
-55 lines (55 sloc)  12 KB
 const generateQuote = function() { const quotes = [
 { quote: "က&#4156;င&#4154;န&#4140;စ&#4157;&#4140;ပ&#4156;&#4145;&#4140;ဆ&#4141;&#4143;ခ&#4156;င&#4154;&#4152;က သင&#4151;&#4154;လ&#4155;&#4158;&#4140;က&#4141;&#4143; မထ&#4141;ခ&#4141;&#4143;က&#4154;စ&#4145;ပ&#4139;ဘ&#4144;&#4152;&#4171;",  author: "sawsan" },
 { quote: "It is impossible to manufacture or imitate love", author: "Horace Slughorn" },
