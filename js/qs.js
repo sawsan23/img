@@ -1,3 +1,22 @@
+Skip to content
+sawsan23
+/
+ss
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+ss/js/js/qs.js
+@sawsan23
+sawsan23 Add files via upload
+ 1 contributor
+55 lines (55 sloc)  12 KB
 const generateQuote = function() { const quotes = [
 { quote: "က&#4156;င&#4154;န&#4140;စ&#4157;&#4140;ပ&#4156;&#4145;&#4140;ဆ&#4141;&#4143;ခ&#4156;င&#4154;&#4152;က သင&#4151;&#4154;လ&#4155;&#4158;&#4140;က&#4141;&#4143; မထ&#4141;ခ&#4141;&#4143;က&#4154;စ&#4145;ပ&#4139;ဘ&#4144;&#4152;&#4171;",  author: "sawsan" },
 { quote: "It is impossible to manufacture or imitate love", author: "Horace Slughorn" },
@@ -52,4 +71,4 @@ const generateQuote = function() { const quotes = [
     generateQuote();
     document.getElementById("generate").addEventListener('click', generateQuote);
 }  
-var marginBottom,marginRight,snowMax=27,snowColor=["#DDD","#EEE"],snowEntity="&#x2022;",snowSpeed=.75,snowMinSize=7,snowMaxSize=17,snowRefresh=50,snowStyles="cursor: default; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;",snow=[],pos=[],coords=[],lefr=[];function randomise(o){return rand=Math.floor(o*Math.random()),rand}function initSnow(){var o=snowMaxSize-snowMinSize;for(marginBottom=document.body.scrollHeight-5,marginRight=document.body.clientWidth-15,i=0;i<=snowMax;i++)coords[i]=0,lefr[i]=15*Math.random(),pos[i]=.03+Math.random()/10,snow[i]=document.getElementById("flake"+i),snow[i].style.fontFamily="inherit",snow[i].size=randomise(o)+snowMinSize,snow[i].style.fontSize=snow[i].size+"px",snow[i].style.color=snowColor[randomise(snowColor.length)],snow[i].style.zIndex=1e3,snow[i].sink=snowSpeed*snow[i].size/5,snow[i].posX=randomise(marginRight-snow[i].size),snow[i].posY=randomise(2*marginBottom-marginBottom-2*snow[i].size),snow[i].style.left=snow[i].posX+"px",snow[i].style.top=snow[i].posY+"px";moveSnow()}function resize(){marginBottom=document.body.scrollHeight-5,marginRight=document.body.clientWidth-15}function moveSnow(){for(i=0;i<=snowMax;i++)coords[i]+=pos[i],snow[i].posY+=snow[i].sink,snow[i].style.left=snow[i].posX+lefr[i]*Math.sin(coords[i])+"px",snow[i].style.top=snow[i].posY+"px",(snow[i].posY>=marginBottom-2*snow[i].size||parseInt(snow[i].style.left)>marginRight-3*lefr[i])&&(snow[i].posX=randomise(marginRight-snow[i].size),snow[i].posY=0);setTimeout("moveSnow()",snowRefresh)}for(i=0;i<=snowMax;i++)document.write("<span id='flake"+i+"' style='"+snowStyles+"position:absolute;top:-"+snowMaxSize+"'>"+snowEntity+"</span>");window.addEventListener("resize",resize),window.addEventListener("load",initSnow);
+var marginBottom,marginRight,snowMax=15,snowColor=["#DDD","#EEE"],snowEntity="&#x2022;",snowSpeed=.75,snowMinSize=6,snowMaxSize=14,snowRefresh=50,snowStyles="cursor: default; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;",snow=[],pos=[],coords=[],lefr=[];function randomise(o){return rand=Math.floor(o*Math.random()),rand}function initSnow(){var o=snowMaxSize-snowMinSize;for(marginBottom=document.body.scrollHeight-5,marginRight=document.body.clientWidth-15,i=0;i<=snowMax;i++)coords[i]=0,lefr[i]=15*Math.random(),pos[i]=.03+Math.random()/10,snow[i]=document.getElementById("flake"+i),snow[i].style.fontFamily="inherit",snow[i].size=randomise(o)+snowMinSize,snow[i].style.fontSize=snow[i].size+"px",snow[i].style.color=snowColor[randomise(snowColor.length)],snow[i].style.zIndex=1e3,snow[i].sink=snowSpeed*snow[i].size/5,snow[i].posX=randomise(marginRight-snow[i].size),snow[i].posY=randomise(2*marginBottom-marginBottom-2*snow[i].size),snow[i].style.left=snow[i].posX+"px",snow[i].style.top=snow[i].posY+"px";moveSnow()}function resize(){marginBottom=document.body.scrollHeight-5,marginRight=document.body.clientWidth-15}function moveSnow(){for(i=0;i<=snowMax;i++)coords[i]+=pos[i],snow[i].posY+=snow[i].sink,snow[i].style.left=snow[i].posX+lefr[i]*Math.sin(coords[i])+"px",snow[i].style.top=snow[i].posY+"px",(snow[i].posY>=marginBottom-2*snow[i].size||parseInt(snow[i].style.left)>marginRight-3*lefr[i])&&(snow[i].posX=randomise(marginRight-snow[i].size),snow[i].posY=0);setTimeout("moveSnow()",snowRefresh)}for(i=0;i<=snowMax;i++)document.write("<span id='flake"+i+"' style='"+snowStyles+"position:absolute;top:-"+snowMaxSize+"'>"+snowEntity+"</span>");window.addEventListener("resize",resize),window.addEventListener("load",initSnow);
